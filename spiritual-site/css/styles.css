@@ -1,0 +1,449 @@
+/* ==================================== */
+/* 1. Base / Variables / Typography */
+/* ==================================== */
+:root
+
+
+{
+  /* UPDATED COLOR PALETTE for a sophisticated, calmer look */
+  --soft-bg: #e9f5f2;     /* Very Light Mint/Teal Background */
+  --card-bg: #ffffff;    
+
+
+  --primary: #4ca89a;     /* Teal/Mint - Main Interactive Color */
+  --accent: #7fc8d6;      /* Light Blue - Secondary/Highlight Color */
+  --muted: #607D8B;       /* Softer Blue-Gray for muted text/elements (e.g., footer) */
+  --text-dark: #2C3E50;   /* Dark Navy/Charcoal for a more premium, less harsh look (Headings/Main Text) */
+  --text-light: #f9fafb;  /* Default Light Text Color (for Hero) */
+  --text-secondary:#2C3E50; /* Clearer secondary text color for descriptions and card text */
+}
+
+/* Global Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Body and Typography */
+body{
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+  color: var(--text-dark);
+  background-color: var(--soft-bg); 
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings: Use elegant font for sophisticated look */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Taviraj', 'Playfair Display', serif; 
+    color: var(--text-dark); 
+}
+
+/* Base Links */
+a{ 
+  color: var(--primary); 
+  text-decoration: none; 
+  transition: color 0.15s ease;
+}
+a:hover{ 
+  color: var(--primary); 
+  text-decoration: underline; 
+}
+a:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+
+/* ==================================== */
+/* 2. Header / Navigation */
+/* ==================================== */
+.site-header{
+  background:var(--card-bg);
+  border-bottom:1px solid rgba(17,24,39,0.08); 
+  position:sticky; 
+  top:0;
+  z-index:1000; 
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:0.75rem 1rem;
+}
+.brand{
+  font-weight:700;
+  color:var(--primary);
+  text-decoration:none;
+  font-size:1.25rem; 
+  font-family: 'Taviraj', 'Playfair Display', serif; 
+}
+
+/* Hamburger toggle accessibility and structure */
+input[type="checkbox"]#nav-toggle,
+input[type="checkbox"]#nav-toggle-2,
+input[type="checkbox"]#nav-toggle-3,
+input[type="checkbox"]#nav-toggle-4 {
+  display: none;
+}
+
+.nav-toggle-label{
+  display:none; 
+  width:36px;
+  height:28px;
+  cursor:pointer;
+  z-index: 1001; 
+}
+.nav-toggle-label span{
+  display:block;
+  height:3px;
+  background:var(--text-dark);
+  margin:6px 0;
+  border-radius:2px;
+}
+
+/* Nav menu links */
+.site-nav{ display:block; }
+.nav-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:1.2rem;
+  align-items:center;
+}
+.nav-list a{
+  color: var(--text-dark);
+  padding:0.5rem 0.75rem;
+  border-radius:6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.nav-list a.active,
+.nav-list a:hover,
+.nav-list a:focus { 
+  background:rgba(76, 168, 154, 0.15); 
+  color:var(--primary);
+  outline: none; 
+}
+
+
+/* ==================================== */
+/* 3. Layout Sections */
+/* ==================================== */
+
+/* HERO SECTION (index.html) */
+.hero{
+  min-height:56vh;
+  background-image: linear-gradient(180deg, rgba(76, 168, 154, 0.4), rgba(46, 95, 99, 0.6)), url('../assets/hero.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:4rem 1rem;
+}
+.hero-title{
+  font-size:2.5rem; 
+  font-weight:700;
+  margin-bottom:0.75rem;
+  color:var(--text-light); 
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4); 
+}
+.hero-sub{
+  margin-bottom:1.5rem;
+  font-size:1.15rem;
+  color:var(--text-light); 
+}
+.hero .btn-outline-light{
+  color: var(--card-bg); 
+  border-color: var(--card-bg); 
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.hero .btn-outline-light:hover,
+.hero .btn-outline-light:focus { 
+  color: var(--primary);
+  background-color: var(--card-bg);
+  border-color: var(--card-bg);
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); 
+}
+
+
+/* Cards and features (index.html) */
+.feature-card{
+  box-shadow: 0 4px 12px rgba(17,24,39,0.06); 
+  border: none; 
+  border-radius: 8px;
+  overflow: hidden; 
+}
+.feature-card img{
+  width:100%;
+  height:200px; 
+  object-fit:cover;
+  filter: grayscale(15%) sepia(3%); 
+  transition: filter 0.3s ease;
+}
+.feature-card:hover img{
+  filter: grayscale(0%) sepia(0%);
+}
+.feature-card h5{ 
+  margin:0 0 0.5rem 0; 
+  color: var(--text-dark); 
+  font-weight: 600;
+}
+.feature-card p {
+    color: var(--text-secondary); 
+}
+
+
+/* Practice page styles (practice.html) */
+.practice-card{
+  border: none; 
+  background: var(--card-bg); 
+  box-shadow: 0 6px 16px rgba(17,24,39,0.1); 
+  padding: 1.5rem;
+  border-radius: 12px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.practice-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(17,24,39,0.15);
+}
+
+.practice-card h4{
+  color: var(--primary);
+  font-weight: 600;
+}
+.practice-card ol, .practice-card ul{
+  color: var(--text-secondary); 
+  padding-left: 1.5rem;
+}
+
+/* --- Practice Visuals --- */
+.practice-visual-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden; 
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(17,24,39,0.08); 
+  max-height: 250px; 
+}
+.practice-visual-wrapper img {
+  width: 100%;
+  height: 100%; 
+  display: block;
+  object-fit: cover; 
+}
+
+
+/* About photo (about.html) - Sizing updated to 300px square, removed roundness */
+.about-photo{ 
+  width: 350px; 
+  height: 350px; 
+  object-fit:cover; 
+  border-radius: 12px; /* Soft corners for square shape */
+  border: 4px solid var(--soft-bg);
+  box-shadow: 0 8px 16px rgba(17,24,39,0.1); 
+  filter: saturate(110%);
+}
+
+
+/* Footer */
+.site-footer{ 
+  background:var(--soft-bg); 
+  border-top: 1px solid rgba(17,24,39,0.08); 
+  color: var(--muted); 
+}
+
+
+/* ==================================== */
+/* 4. Responsive Styles (Media Queries) */
+/* ==================================== */
+@media (max-width: 900px){
+  /* Show hamburger menu on tablet/mobile */
+  .nav-toggle-label{ display:block; }
+  .site-nav{
+    position:fixed;
+    right:0;
+    top:0;
+    height:100vh;
+    width:280px; 
+    background:var(--card-bg);
+    transform:translateX(100%); 
+    transition: transform .3s ease-out; 
+    box-shadow: -10px 0 30px rgba(2,6,23,0.15); 
+    padding-top:5rem;
+  }
+  .site-nav .nav-list{
+    flex-direction:column;
+    gap:0.5rem;
+    align-items: flex-start; 
+    padding-left:1.5rem;
+  }
+  .site-nav .nav-list a{
+    display:block;
+    width: 100%;
+    padding:0.9rem 1rem;
+    border-radius:0;
+  }
+
+  /* When the checkbox is checked, show nav (CSS Hack) */
+  #nav-toggle:checked ~ .site-nav,
+  #nav-toggle-2:checked ~ .site-nav,
+  #nav-toggle-3:checked ~ .site-nav,
+  #nav-toggle-4:checked ~ .site-nav {
+    transform: translateX(0);
+  }
+
+  /* Ensure header container shows burger on small screens */
+  .site-header .container{ justify-content:space-between; }
+}
+@media (max-width: 575px){
+  /* Adjustments for small mobile screens */
+  .hero-title{ font-size:2rem; }
+  .hero-sub{ font-size: 1rem; }
+  /* Adjusted for new about-photo size */
+  .about-photo{ width:200px; height:200px; } 
+}
+
+
+/* ==================================== */
+/* 5. Page Specific Overrides & Backgrounds */
+/* ==================================== */
+
+/* --- 1. Practice Page Background --- */
+.page-practice {
+  background-image: url('../assets/page_background_quote.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Alpha is set to 0.75 for balance between image visibility and text clarity */
+  background-color: rgba(255, 255, 255, 0.75); 
+  background-blend-mode: overlay;
+}
+
+/* --- 2. About Page Background --- */
+.page-about {
+  background-image: url('../assets/about-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Alpha is set to 0.75 for balance between image visibility and text clarity */
+  background-color: rgba(255, 255, 255, 0.75); 
+  background-blend-mode: overlay;
+}
+
+/* --- 3. Contact Page Background --- */
+.page-contact { 
+  /* Using relative path as primary fix for path issues */
+  background-image: url('../assets/contact-background.jpg'); 
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Alpha is set to 0.75 for balance between image visibility and text clarity */
+  background-color: rgba(255, 255, 255, 0.80); 
+  background-blend-mode: overlay;
+}
+
+/* --- 4. Home Page (Solid Color) --- */
+.page-home {
+  background-image: none;
+  background-color: var(--text-dark); 
+}
+
+
+/* ==================================== */
+/* 6. Custom Section Overrides */
+/* ==================================== */
+
+/* --- Home Page CTA Buttons (#resources) --- */
+
+/* General styling for CTA buttons */
+#resources .btn {
+    border-radius: 8px; 
+    font-weight: 500;
+    transition: all 0.3s ease; 
+    padding: 0.75rem 1.5rem; 
+}
+
+/* 1. Primary Solid Button (e.g., Explore All Practices) */
+.btn-primary {
+    color: var(--card-bg); 
+    background-color: var(--primary);
+    border-color: var(--primary);
+    
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(76, 168, 154, 0.3); 
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: var(--card-bg); 
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(76, 168, 154, 0.4); 
+}
+
+
+/* 2. Primary Outline Button (e.g., Learn Our Mission) */
+.btn-outline-primary {
+    color: var(--primary); 
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    color: var(--card-bg); 
+    background-color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(76, 168, 154, 0.4); 
+}
+
+
+/* 3. Muted/Resources Button (e.g., Mental Health Resources) */
+.btn-outline-secondary.btn-lg {
+    color: var(--muted) !important; 
+    border-color: var(--muted) !important;
+}
+
+.btn-outline-secondary.btn-lg:hover,
+.btn-outline-secondary.btn-lg:focus {
+    color: var(--card-bg) !important; 
+    background-color: var(--muted) !important;
+    border-color: var(--muted) !important;
+    box-shadow: 0 0 0 0.25rem rgba(96, 125, 139, 0.4); 
+}
+
+
+/* --- #affirmations: Understanding Your Breath Section Styles --- */
+#affirmations {
+    background-image: url('../assets/harmony-section-bg.jpg'); 
+    
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Container for text readability over affirmation background */
+#affirmations .container {
+    background-color: rgba(255, 255, 255, 0.85); 
+    border-radius: 15px; 
+    padding: 3rem 1.5rem; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust text colors */
+#affirmations h2 {
+    color: var(--primary) !important; 
+}
+#affirmations dt,
+#affirmations dd,
+#affirmations .blockquote p,
+#affirmations .blockquote-footer {
+    color: var(--text-dark) !important; 
+}
+

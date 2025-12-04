@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harmony — Practice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+<body class="page-practice">
+
+  <header class="site-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="brand" href="index.html">Harmony</a>
+      <input id="nav-toggle-2" type="checkbox" />
+      <label for="nav-toggle-2" class="nav-toggle-label" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="practice.html" class="active" aria-current="page">Practice</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    
+    <h1 class="mb-2 display-5 fw-bold" style="color: var(--text-dark);">Guided Breathing Practices</h1>
+    <p class="lead mb-4" style="color: var(--text-secondary);">
+      Whether you're seeking peace, clarity, or a moment of grounding, these simple yet powerful breathing 
+      exercises help reconnect your mind and body. Take your time—each practice is intentionally designed 
+      to support emotional balance, lower stress, and restore inner harmony.
+    </p>
+
+    <section class="mb-5 p-3 rounded" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.05);">
+        <h3 class="h6 fw-bold mb-3" style="color: var(--text-dark);">Filter by Focus or Duration:</h3>
+        <div class="d-flex flex-wrap gap-2 nav nav-pills" id="horizontal-filters">
+            <a class="nav-link active" data-bs-toggle="pill" href="#all-practices">All Practices (8)</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#relax-breath">🧘 For Relaxation</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#morning-reset">☀️ Morning Rituals</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#box-style">🛡️ Stress Relief</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#five-minute">⏱️ 5 Minutes or Less</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#four-seven-eight">✨ Deep Calm (4-7-8)</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#alternate-nostril">🌀 Balance (Nadi Shodhana)</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#phys-sigh">💨 Physiological Sigh</a>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="row g-4" id="all-practices"> 
+                
+                <!-- Relax Breath -->
+                <article class="col-lg-6 col-md-12" id="relax-breath" data-duration="5-10" data-difficulty="medium" data-focus="relaxation">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">4-4-6 Relax Breath</h2>
+                            <span class="badge rounded-pill text-bg-success mb-2">Duration: 5-10 Min</span>
+
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              This calming rhythm helps activate your parasympathetic nervous system — the “rest and restore” 
+                              mode of the body. By extending the exhale, this practice naturally lowers the heart rate and 
+                              allows the mind to settle. Perfect for winding down after a long day or preparing for restful sleep.
+                            </p>
+
+                            <div class="practice-visual-wrapper mt-3">
+                                <img src="assets/practice-pose-relax.jpg" alt="Illustration of person sitting in a relaxed, upright position." class="img-fluid">
+                            </div>
+
+                            <div class="accordion accordion-flush mt-3" id="accordionRelax">
+                              <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed small fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRelax" aria-expanded="false" aria-controls="collapseRelax">
+                                    View Step-by-Step Instructions
+                                  </button>
+                                </h3>
+                                <div id="collapseRelax" class="accordion-collapse collapse" data-bs-parent="#accordionRelax">
+                                  <div class="accordion-body p-2">
+                                    <ol class="small" style="color: var(--text-secondary);">
+                                        <li>Sit comfortably with a straight back and relaxed shoulders.</li>
+                                        <li>Inhale through your nose for a count of 4, gently filling the belly.</li>
+                                        <li>Hold the breath softly for 4 counts — avoid tension.</li>
+                                        <li>Exhale slowly through the mouth for 6 counts, letting your whole body soften.</li>
+                                        <li>Repeat 6–10 rounds, focusing on the smoothness of your breath.</li>
+                                        <li>If the counts feel difficult, shorten them—comfort is more important than perfection.</li>
+                                    </ol>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Five Minute Calm -->
+                <article class="col-lg-6 col-md-12" id="five-minute" data-duration="5" data-difficulty="easy" data-focus="reset">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">5-Minute Calm</h2>
+                            <span class="badge rounded-pill text-bg-info mb-2">Duration: 5 Min</span>
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              A simple yet powerful reset for busy days. When your mind feels scattered or 
+                              overwhelmed, this short practice helps bring you back to the present moment — at your desk, on a short walk, or before a meeting.
+                            </p>
+
+                            <div class="practice-visual-wrapper mt-3">
+                                <img src="assets/practice-scene-calm.jpg" alt="A serene landscape symbolizing quick calm." class="img-fluid">
+                            </div>
+
+                            <ul class="small mt-3" style="color: var(--text-secondary);">
+                                <li>Inhale gently for 4–5 seconds through the nose.</li>
+                                <li>Exhale for 5–6 seconds through the mouth, like fogging a mirror.</li>
+                                <li>Repeat for the full five minutes, letting each breath become smoother and softer.</li>
+                                <li>As you breathe, mentally repeat: “I am here. I am safe. I am calm.”</li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Morning Reset -->
+                <article class="col-lg-6 col-md-12" id="morning-reset" data-duration="3-breaths" data-difficulty="easy" data-focus="energy">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">Morning Reset: Anchor Your Day</h2>
+                            <span class="badge rounded-pill text-bg-warning mb-2">Duration: 3 Conscious Breaths</span>
+
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              Start your day with clarity and intention. This short morning ritual awakens the 
+                              body gradually, clears mental fog, and creates a stable emotional foundation to 
+                              help you navigate challenges with a calm and grounded presence.
+                            </p>
+
+                            <div class="practice-visual-wrapper morning-reset-visual mt-3">
+                                <img src="assets/practice-group-morning.jpg" alt="A group meditating on a sunny beach." class="img-fluid">
+                            </div>
+
+                            <div class="accordion accordion-flush mt-3" id="accordionMorning">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed small fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMorning" aria-expanded="false" aria-controls="collapseMorning">
+                                            View Full Instructions
+                                        </button>
+                                    </h3>
+                                    <div id="collapseMorning" class="accordion-collapse collapse" data-bs-parent="#accordionMorning">
+                                        <div class="accordion-body p-2">
+                                            <ul class="small text-secondary list-unstyled">
+                                                <li><strong>Breath 1: Release</strong> — Exhale tension and sleepy heaviness.</li>
+                                                <li><strong>Breath 2: Center</strong> — Connect with your inner balance and stability.</li>
+                                                <li><strong>Breath 3: Intention</strong> — Set a quiet intention such as:
+                                                  <em>“Today I choose clarity,”</em>  
+                                                  <em>“I move through the day with ease,”</em>  
+                                                  or <em>“I am guided and protected.”</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Box Breathing -->
+                <article class="col-lg-6 col-md-12" id="box-style" data-duration="1-5" data-difficulty="medium" data-focus="focus">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">Stress Relief (Box Style)</h2>
+                            <span class="badge rounded-pill text-bg-danger mb-2">Duration: Repeat Until Calm</span>
+
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              Box breathing is widely used by athletes, military personnel, and mental health 
+                              practitioners because of its quick calming effect. The structured rhythm regulates 
+                              your nervous system and improves focus, making it excellent during moments of pressure.
+                            </p>
+
+                            <div class="practice-visual-wrapper mt-3">
+                                <img src="assets/practice-diagram-box.jpg" alt="A graphical representation of the 4-step box breathing technique." class="img-fluid">
+                            </div>
+
+                            <p class="mt-3 mb-0 small" style="color: var(--text-secondary);">
+                              Inhale 4 — Hold 4 — Exhale 4 — Hold 4.  
+                              Continue until your body feels lighter, steadier, and more grounded.
+                            </p>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Daily Motivation -->
+                <article class="col-lg-6 col-md-12" data-duration="1" data-difficulty="easy" data-focus="motivation">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">Daily Motivation</h2>
+                            <span class="badge rounded-pill text-bg-secondary mb-2">Duration: 1 Breath</span>
+
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              A tiny practice with a powerful impact. One deep breath is sometimes all you need 
+                              to reset your mindset. Use this whenever you feel unmotivated, overwhelmed, or 
+                              disconnected from your goals.
+                            </p>
+
+                            <div class="practice-visual-wrapper mt-3">
+                                <img src="assets/practice-visual-quote.jpg" alt="An inspirational quote on a calming background." class="img-fluid">
+                            </div>
+
+                            <p class="mt-3 mb-0 small" style="color: var(--text-secondary);">
+                              Read the quote, inhale slowly, and let your intention shape the next moment of your day.
+                            </p>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- 4-7-8 Breath -->
+                <article class="col-lg-6 col-md-12" id="four-seven-eight" data-duration="4-7-8" data-difficulty="easy" data-focus="sleep">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">4-7-8 (Deep Calm)</h2>
+                            <span class="badge rounded-pill text-bg-primary mb-2">Duration: 4–8 Minutes</span>
+
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              The 4-7-8 technique is a relaxing breathing pattern useful for reducing anxiety and 
+                              helping with sleep onset. The long hold followed by a long exhale encourages deep autonomic regulation.
+                            </p>
+
+                            <div class="practice-visual-wrapper mt-3">
+                                <img src="assets/4-7-8-breathing-exercise.jpg" alt="Person lying down preparing for sleep, practicing 4-7-8 breathing." class="img-fluid">
+                            </div>
+
+                            <div class="mt-3 small" style="color: var(--text-secondary);">
+                                <ol>
+                                  <li>Close your mouth and inhale quietly through the nose for 4 counts.</li>
+                                  <li>Hold the breath for 7 counts (gentle, not forceful).</li>
+                                  <li>Exhale through the mouth with a whoosh sound for 8 counts.</li>
+                                  <li>Repeat up to 4 cycles initially; increase only when comfortable.</li>
+                                </ol>
+                                <p class="mb-0"><em>Tip:</em> Use this before bedtime or during moments of acute agitation.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Alternate Nostril (Nadi Shodhana) -->
+                <article class="col-lg-6 col-md-12" id="alternate-nostril" data-duration="5-10" data-difficulty="medium" data-focus="balance">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">Alternate Nostril (Nadi Shodhana)</h2>
+                            <span class="badge rounded-pill text-bg-light mb-2">Duration: 5–10 Min</span>
+
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              Nadi Shodhana is a balancing pranayama that harmonizes left/right brain activity, 
+                              calms the mind, and improves mental clarity. It’s gentle and suitable for most people.
+                            </p>
+
+                            <div class="practice-visual-wrapper mt-3">
+                                <img src="assets/nadi-shodhana-hand-position.jpg" alt="Illustration showing hand position for alternate nostril breathing." class="img-fluid">
+                            </div>
+
+                            <div class="mt-3 small" style="color: var(--text-secondary);">
+                                <ol>
+                                  <li>Use your right thumb to gently close the right nostril.</li>
+                                  <li>Inhale slowly through the left nostril for a comfortable count.</li>
+                                  <li>Close left nostril with ring finger, release right nostril, exhale right.</li>
+                                  <li>Inhale right, close right, exhale left — that completes one round.</li>
+                                  <li>Repeat for 5–10 rounds, keeping the breath smooth and relaxed.</li>
+                                </ol>
+                                <p class="mb-0"><em>Note:</em> Avoid force; keep soft focus and comfortable breath lengths.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Physiological Sigh -->
+                <article class="col-lg-6 col-md-12" id="phys-sigh" data-duration="0.5-2" data-difficulty="easy" data-focus="panic-reduction">
+                    <section class="card practice-card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="h4 card-title" style="color: var(--primary);">Physiological Sigh (Quick Reset)</h2>
+                            <span class="badge rounded-pill text-bg-dark mb-2">Duration: 30 Seconds - 2 Min</span>
+
+                            <p class="card-text" style="color: var(--text-secondary);">
+                              The physiological sigh uses two short inhales followed by a long exhale — it’s an evidence-based 
+                              technique to rapidly reduce rising anxiety or panic by quickly offloading CO₂ and increasing vagal tone.
+                            </p>
+
+                            <div class="practice-visual-wrapper mt-3">
+                                <img src="assets/physiological-sigh-technique.jpg" alt="Person taking a double inhale and long exhale to calm down." class="img-fluid">
+                            </div>
+
+                            <div class="mt-3 small" style="color: var(--text-secondary);">
+                                <ol>
+                                  <li>Take a short, sharp inhale through the nose (small).</li>
+                                  <li>Immediately take a second short inhale to fully inflate the lungs.</li>
+                                  <li>Exhale slowly and completely through the mouth for a longer count.</li>
+                                  <li>Repeat 3–6 times until breathing and heart-rate feel calmer.</li>
+                                </ol>
+                                <p class="mb-0"><em>When to use:</em> sudden stress, public speaking nerves, or panic spikes.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                
+            </div> 
+
+            <!-- Mindfulness Tips & Self-Healing -->
+            <section class="mt-5 pt-4">
+              <h3 class="display-6 mb-3" style="color: var(--text-dark);">Mindfulness Tips & Self-Healing</h3>
+              
+              <p class="fs-5" style="color: var(--text-secondary);">
+                Breathwork is most effective when paired with simple, practical habits that support nervous system regulation.
+                Below are advanced tips you can practice alongside the breathing techniques above — perfect for course material,
+                guided animations, or journaling prompts.
+              </p>
+
+              <div class="row g-4 mt-3">
+                <div class="col-md-6">
+                  <div class="card h-100" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.04);">
+                    <div class="card-body">
+                      <h4 class="h6 fw-bold">Practice with Intention</h4>
+                      <p class="small text-secondary">
+                        Name your intention before each session. For example: <em>"I breathe to calm my mind"</em> or <em>"I open to clarity"</em>.
+                        An intention focuses attention and turns routine breathing into a healing ritual.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card h-100" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.04);">
+                    <div class="card-body">
+                      <h4 class="h6 fw-bold">Anchor with Body Awareness</h4>
+                      <p class="small text-secondary">
+                        After 2–3 cycles, scan your body from head to toe. Notice areas of tension and, as you exhale, imagine releasing that tightness.
+                        This helps create embodied self-awareness and deeper relaxation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card h-100" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.04);">
+                    <div class="card-body">
+                      <h4 class="h6 fw-bold">Use Micro-Practices</h4>
+                      <p class="small text-secondary">
+                        Tiny practices (1–3 breaths) can interrupt stress cycles during the day. Commit to 3 micro-practices: morning, midday, evening.
+                        Over time these become powerful habit anchors.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card h-100" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.04);">
+                    <div class="card-body">
+                      <h4 class="h6 fw-bold">Journal & Reflect</h4>
+                      <p class="small text-secondary">
+                        After a session, jot down one word describing how you feel. Track patterns: which practices calm you fastest? This supports personalized self-healing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 small text-secondary">
+                <p class="mb-1"><strong>Self-Healing Reminder:</strong> breathwork supports but does not replace medical treatment. For persistent anxiety, sleep issues, or health concerns, consult a healthcare provider or mental health professional.</p>
+              </div>
+            </section>
+
+            <!-- Important Notes Section -->
+            <section class="mt-5 pt-4">
+              <h3 class="display-6 mb-3" style="color: var(--text-dark);">Important Notes</h3>
+              <p class="fs-5" style="color: var(--text-secondary);">
+                These practices are gentle, supportive tools for relaxation and self-awareness.  
+                If you experience discomfort, dizziness, or have existing medical or respiratory concerns, 
+                consult a healthcare professional. Remember: your breath is a powerful guide — slow, consistent 
+                practice can gradually transform your emotional balance and well-being.
+              </p>
+            </section>
+
+        </div>
+    </div>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+      <p class="mb-0 text-secondary small">© 2025 Harmony — Mental Well-being & Breathing Guide</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

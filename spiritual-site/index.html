@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harmony — Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+<body class="page-home">
+
+  <header class="site-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="brand" href="index.html">Harmony</a>
+      <input id="nav-toggle" type="checkbox" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="practice.html">Practice</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero-intro"> 
+    <div class="container text-center py-5">
+      <h1 class="hero-title display-4 fw-bold">Bloom Into Your Harmony</h1>
+      <p class="hero-sub fs-5">Short, effective guides to anchor calm in your busy, modern life.</p>
+      <a class="btn btn-outline-light btn-lg mt-4" href="practice.html" style="border-radius: 50px;">Start a Practice</a>
+    </div>
+  </section>
+
+  <main> 
+    
+    <section class="py-5" style="background-color: var(--soft-bg);" id="value-proposition">
+        <div class="container">
+            <h2 class="text-center mb-5 display-6" style="color: var(--text-dark);">Why Choose Harmony?</h2>
+            
+            <div class="row g-4">
+                <article class="col-md-4">
+                    <div class="card feature-card h-100 shadow">
+                        <img src="assets/breathing-meditation.jpg" class="card-img-top" alt="A person meditating during sunrise, symbolizing calm." loading="lazy">
+                        <div class="card-body">
+                            <h3 class="h5 card-title fw-bold">Mindful Practices</h3>
+                            <p class="mb-0" style="color: var(--text-secondary);">Clear, short practices to help you feel calm and centered in minutes.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card feature-card h-100 shadow">
+                        <img src="assets/forest-sunlight.jpg" class="card-img-top" alt="Tranquil forest scene with sunlight filtering through tall trees." loading="lazy">
+                        <div class="card-body">
+                            <h3 class="h5 card-title fw-bold">Intuitive Design</h3>
+                             <p class="mb-0" style="color: var(--text-secondary);">Soft colours, elegant typography, and zero distractions for a soothing experience.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card feature-card h-100 shadow">
+                        <img src="assets/breathing-in-nature.jpg" class="card-img-top" alt="A person taking a deep breath outdoors among green foliage." loading="lazy">
+                        <div class="card-body">
+                            <h3 class="h5 card-title fw-bold">Truly Accessible</h3>
+                            <p class="mb-0" style="color: var(--text-secondary);">Works on mobile, tablet and desktop — no installations or apps needed.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-5" id="affirmations">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="mb-4 display-6" style="color: var(--primary);">Understanding Your Breath</h2>
+                    
+                    <dl class="row text-start mt-4">
+                        <dt class="col-sm-4 mb-2 fw-bold" style="color: var(--text-dark);">What is Alpha State?</dt>
+                        <dd class="col-sm-8 mb-2" style="color: var(--text-secondary);">The brain is in the Alpha state (8 - 13Hz) during meditation or deep relaxation, facilitating calm and clarity.</dd>
+
+                        <dt class="col-sm-4 fw-bold" style="color: var(--text-dark);">Why 5-Minute Practices?</dt>
+                        <dd class="col-sm-8" style="color: var(--text-secondary);">Consistent, short practice builds strong habits faster than sporadic long sessions.</dd>
+                    </dl>
+
+                    <blockquote class="blockquote mt-5 pt-4 border-top">
+                        <p class="mb-0 fs-4 fst-italic" style="color: var(--text-secondary);">"You are stronger than you think, and you are not alone on this journey."</p>
+                        <footer class="blockquote-footer mt-2" style="color: var(--muted);">Harmony Community</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--soft-bg);" id="resources">
+        <div class="container text-center">
+            <h2 class="mb-4 display-6" style="color: var(--primary);">Ready to Begin?</h2>
+            <p class="fs-5 mx-auto" style="max-width: 700px; color: var(--text-secondary);">Explore our guided practices and access external resources to support your mental well-being.</p>
+            
+            <div class="d-grid gap-3 d-md-flex justify-content-center mt-4">
+                <a class="btn btn-primary btn-lg" href="practice.html">Explore All Practices</a>
+                <a class="btn btn-outline-primary btn-lg" href="about.html">Learn Our Mission</a>
+                <a class="btn btn-outline-secondary btn-lg" href="#" target="_blank" rel="noopener noreferrer">Mental Health Resources</a>
+
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+      <p class="mb-0 text-secondary small">© 2025 Harmony — Mental Well-being &amp; Breathing Guide</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
