@@ -1,8 +1,34 @@
 # 🧘 Harmony — A Responsive Guide to Mental Well-being & Breathing
 
+Click [**here**](index.html) to explore the live version of my responsive website.
+
 **Project Description:** Harmony is a website designed to offer accessible, short-form breathing and mindfulness practices, helping users anchor calm and alleviate the stress of modern life. It follows a mobile-first philosophy, prioritizing a clean, elegant visual experience and superior user experience (UX).
 
----
+***
+
+## 🖼️ Project Visual Showcase
+
+A key visual showing the site's adaptability across desktop, tablet, and mobile screens.
+
+![Harmony Responsive Devices Mockup](https://your-image-hosting-service.com/path/to/your/responsive-devices-mockup.png)
+
+***
+
+## 📋 Table of Contents
+
+* [Website Access](#website-access)
+* [Goals and Vision](#goals-and-vision)
+* [Tech Stack & Design Implementation](#tech-stack--design-implementation)
+    * [Tech Stack](#tech-stack)
+    * [Color Palette](#color-palette-css-variables)
+* [Responsive Design and UX Details](#responsive-design-and-ux-details)
+    * [Layout and Structure](#1-layout-and-structure)
+    * [Page-Specific UX & Styling](#2-page-specific-ux--styling)
+* [User Stories and Acceptance Criteria](#user-stories-and-acceptance-criteria)
+* [Known Issues and Future Updates](#known-issues-and-future-updates)
+* [Setup and Local Run](#setup-and-local-run)
+
+***
 
 ## 🚀 Website Access
 
@@ -10,24 +36,6 @@
 | :--- | :--- | :--- |
 | **Live Demo** | [Explore the Live Site Here](index.html) | Open the main landing page in your browser. |
 | **Code Repository** | **[GitHub Repository: Ayinuer/harmony-meditation-site](https://github.com/Ayinuer/harmony-meditation-site)** | Access and clone the complete project source code. |
-
----
-
-## 🖼️ Project Visual Showcase
-
-Please replace the placeholders below with the **public URLs** of your images (e.g., links obtained after uploading to GitHub, Imgur, or a similar image host).
-
-### 1. Responsive Devices Mockup
-
-A key visual showing the site's adaptability across desktop, tablet, and mobile screens.
-
-![Harmony Responsive Devices Mockup](https://your-image-hosting-service.com/path/to/your/responsive-devices-mockup.png)
-
-### 2. Key Features Screenshot
-
-A screenshot showcasing the three core value cards from the "Why Choose Harmony?" section on the home page.
-
-![Harmony Key Features Section](https://your-image-hosting-service.com/path/to/your/feature-cards-screenshot.png)
 
 ---
 
@@ -51,7 +59,7 @@ A screenshot showcasing the three core value cards from the "Why Choose Harmony?
 * **Typography:** **Taviraj** (for elegant headings) and **Inter** (for clean, readable body text).
 * **Icons:** **Font Awesome v6.5.1**, used for contact forms and feature icons.
 
-### 🎨 Color Palette (CSS Variables)
+### Color Palette (CSS Variables)
 
 The project utilizes CSS Custom Properties (`:root`) for a soothing, consistent look based on a Mint/Teal theme.
 
@@ -101,6 +109,21 @@ All CSS background images and HTML image tags rely on **relative paths**. Given 
 | **As a busy user, I want to know how long a practice takes**, so I can fit it into my schedule. | **GIVEN** I view any practice card on the Practice page **WHEN** I read the card summary **THEN** a colored badge clearly displays the **Duration** (e.g., "5 Min," "Repeat Until Calm"). |
 | **As a returning user, I want to quickly find a practice for my current need**, so I don't waste time. | **GIVEN** I am on the Practice page (`practice.html`) **WHEN** I click a filter pill (e.g., "Stress Relief") **THEN** only the relevant practice cards are shown. |
 | **As a beginner, I want clear, simple instructions** for a complex practice like 4-4-6 Relax Breath. | **GIVEN** I view the Practice page **WHEN** I click the "View Step-by-Step Instructions" button **THEN** a detailed, numbered list of steps is revealed. |
+
+---
+
+## 🐛 Known Issues and Future Updates
+
+### Known Issues / Bugs
+
+* **Filter Scalability:** The current practice filter uses pure CSS, which is robust but not scalable for hundreds of different practice types.
+* **Mobile Scroll:** (If applicable) On certain mobile browsers, the scroll position sometimes jumps slightly when the Hamburger menu transitions.
+
+### Planned Future Updates
+
+* **Practice Tracking:** Implement local storage to track user completion streaks and total minutes practiced.
+* **Audio Integration:** Integrate optional ambient background sounds for each practice to enhance focus.
+* **User Authentication:** Expand to include user accounts for personalized content and saving favorite practices.
 
 ---
 
