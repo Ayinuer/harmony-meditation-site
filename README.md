@@ -7,50 +7,56 @@ Harmony is a responsive, soothing website designed to offer short, accessible br
 
 ---
 
-## 🖼️ Project Visual Showcase
-
-A key visual showing the site’s adaptability across desktop, tablet, and mobile screens.
-
-![Harmony Responsive Devices Mockup](https://your-image-hosting-service.com/path/to/your/responsive-devices-mockup.png)
-
----
-
 ## 📋 Table of Contents
 
-- [Website Access](#website-access)
-- [Goals and Vision](#goals-and-vision)
-- [Tech Stack & Design Implementation](#tech-stack--design-implementation)
-  - [Tech Stack](#tech-stack)
-  - [Color Palette](#color-palette-css-variables)
-- [Responsive Design and UX Details](#responsive-design-and-ux-details)
-  - [Layout and Structure](#1-layout-and-structure)
-  - [Page-Specific UX & Styling](#2-page-specific-ux--styling)
-- [User Stories and Acceptance Criteria](#user-stories-and-acceptance-criteria)
-- [Known Issues and Future Updates](#known-issues-and-future-updates)
-- [Setup and Local Run](#setup-and-local-run)
+* [**🎯 Project Goals & Vision**](#-project-goals--vision)
+* [**🖼️ Visual Showcase & Technical Implementation**](#%EF%B8%8F-visual-showcase--technical-implementation)
+    * [1. Responsive Adaptability](#1-responsive-adaptability)
+    * [2. Key Feature: Practice Filtering](#2-key-feature-practice-filtering)
+* [**💻 Tech Stack & Design System**](#-tech-stack--design-system)
+* [**✅ User Stories & Features**](#-user-stories--features)
+* [**🛠️ Setup & Local Run**](#%EF%B8%8F-setup--local-run)
+* [**🐛 Known Issues & Future Plans**](#-known-issues--future-plans)
 
 ---
 
-## 🚀 Website Access
+## 🎯 Project Goals & Vision
 
-| Link Type | URL | Description |
-|----------|-----|-------------|
-| **Live Demo** | **https://ayinuer.github.io/harmony-meditation-site/harmony-meditation-site/index.html** | Opens the published GitHub Pages site. |
-| **Code Repository** | **https://github.com/Ayinuer/harmony-meditation-site** | Full source code for cloning and contribution. |
-
----
-
-## 🎯 Goals and Vision
-
-| Goal Category | Detailed Description |
-|---------------|----------------------|
-| **Core Mission** | To make mindfulness a natural part of daily life by providing short, science-backed breathing practices free of jargon and distraction. |
-| **Target Audience** | Busy professionals and students (ages 20–45) experiencing moderate stress, and beginners exploring mindful breathing. |
-| **User Goals** | 1) Start a practice in under 5 minutes. 2) Understand breathwork techniques easily. 3) Build daily micro-habits. |
+| Category | Detailed Description |
+| :--- | :--- |
+| **Core Mission** | To demystify mindfulness by offering short, science-backed breathing practices, eliminating jargon to facilitate the building of daily micro-habits. |
+| **Target Audience** | Stressed professionals and students (ages 20–45), prioritizing beginners seeking simple, immediate stress-reduction tools. |
+| **User Goals** | 1) Initiate a practice in under 5 minutes. 2) Easily grasp breathwork instructions. 3) Consistently integrate the tool into their daily routine. |
 
 ---
 
-## 💻 Tech Stack & Design Implementation
+## 🖼️ Visual Showcase & Technical Implementation
+
+This section details the critical design and development work behind the site's most impactful visuals.
+
+### 1. Responsive Adaptability
+
+This visual demonstrates the structural integrity of the site across three major breakpoints (desktop, tablet, and mobile).
+
+![Harmony Responsive Devices Mockup]
+![alt text](harmony-meditation-site/assets/responsive-devices-mockup.png)
+**Implementation Details:**
+* **Mobile-First Development:** The entire site architecture was prioritized for narrow viewports, minimizing reflow and load times for mobile users.
+* **Bootstrap Grid System:** **Bootstrap 5.3.3** was implemented for its robust, consistent grid, ensuring elements like the navigation and footer maintain alignment regardless of screen size.
+* **Custom Navigation:** The mobile hamburger menu was engineered using a lightweight **pure-CSS checkbox toggle method**, avoiding JavaScript dependencies for faster, more reliable performance.
+
+### 2. Key Feature: Practice Filtering
+
+A screenshot showing the 'Practice' page, highlighting the filter controls and interactive practice cards.
+![alt text](harmony-meditation-site/assets/practice-page-mockUp.png)
+
+**Implementation Details:**
+* **Interactive Filtering:** Practices are categorized using filter pills (e.g., "Calm," "Energy"). This functionality utilizes pure CSS and attribute selectors (or lightweight JavaScript if used) to control the visibility of cards, offering a smooth, instant filtering experience.
+* **UX Micro-Animation:** A subtle **`transform: translateY(-3px)`** property was applied via CSS to the practice cards on hover, providing clear, tactile visual feedback to the user before they commit to clicking a card.
+
+---
+
+## 💻 Tech Stack & Design System
 
 ### Tech Stack
 
@@ -71,7 +77,6 @@ A key visual showing the site’s adaptability across desktop, tablet, and mobil
 | `--muted` | `#607D8B` | Secondary text |
 
 ---
-
 ## 📱 Responsive Design and UX Details
 
 ### 1. Layout and Structure
@@ -96,37 +101,37 @@ A key visual showing the site’s adaptability across desktop, tablet, and mobil
 
 ---
 
-## ✅ User Stories and Acceptance Criteria
+## ✅ User Stories & Features
 
 | User Story | Acceptance Criteria |
-|------------|----------------------|
-| View value immediately | Clear hero headline + CTA visible on load |
-| Know practice duration | Duration badges visible on practice cards |
-| Filter practices | Clicking filter pills updates card visibility |
-| Learn instructions easily | Step-by-step list reveals on button click |
+| :--- | :--- |
+| **As a busy user, I want to view value immediately** | A clear hero headline and Call-to-Action (CTA) are positioned high on the Home page, visible upon initial page load. |
+| **As a beginner, I need to know the commitment** | Duration badges are visible on all practice cards, allowing quick decision-making. |
+| **As an explorer, I want to quickly find relevant practices** | Clicking filter pills instantly updates the visible practice cards, filtering the library without requiring a page reload. |
+| **As a new user, I need to learn instructions easily** | Detailed, step-by-step instructions are hidden and revealed via a button click, promoting focused reading and reducing initial cognitive load. |
 
 ---
 
-## 🐛 Known Issues & Future Improvements
+## 🛠️ Setup & Local Run
+
+To clone and run the project locally, execute the following commands in your terminal:
+
+1.  Clone the repository: `git clone https://github.com/Ayinuer/harmony-meditation-site.git`
+2.  Navigate to the directory: `cd harmony-meditation-site`
+3.  Open `index.html` in your preferred web browser.
+
+---
+
+## 🐛 Known Issues & Future Plans
 
 ### Current Issues
-- CSS-based filter not scalable for large libraries.
-- Mobile scroll shift on some browsers when opening the menu.
+* The current pure CSS filtering mechanism has limited scalability and would need replacement with JavaScript for a massive library.
+* A minor mobile viewport scroll shift is observed on some browsers when the custom navigation menu is toggled.
 
 ### Future Enhancements
-- User streak tracking (LocalStorage).
-- Optional ambient audio.
-- User accounts and saving favorites.
+* Implement user streak tracking using **LocalStorage** to encourage daily use.
+* Integrate optional ambient audio into practice sessions for enhanced immersion.
+* Develop user account functionality to allow saving and tracking favorite practices.
 
 ---
-
-## 🛠️ Setup and Local Run
-
-1. `git clone https://github.com/Ayinuer/harmony-meditation-site.git`
-2. `cd harmony-meditation-site`
-3. Open `index.html` in your browser.
-
----
-
-**Creator:** Ayinuer Aihaiti  
-**License:** © 2025 Harmony — Mental Well-being & Breathing Guide
+**Creator:** Ayinuer Aihaiti | **License:** © 2025 Harmony — Mental Well-being & Breathing Guide
