@@ -66,6 +66,12 @@ A screenshot showing the 'Practice' page, highlighting the filter controls and i
 - **Typography:** Taviraj & Inter.
 - **Icons:** Font Awesome 6.5.1.
 
+### W3C Validation Status
+The project's primary stylesheet has been verified to adhere to web standards.
+
+[![Valid CSS!](https://jigsaw.w3.org/css-validator/images/vcss)](https://jigsaw.w3.org/css-validator/validator?uri=https://ayinuer.github.io/harmony-meditation-site/harmony-meditation-site/css/styles.css&profile=css3&usermedium=all)
+
+
 ### Color Palette (CSS Variables)
 
 | Variable Name | Color Value | Usage |
