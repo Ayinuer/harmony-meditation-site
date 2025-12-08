@@ -44,15 +44,16 @@
     <section class="mb-5 p-3 rounded" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.05);">
         <h3 class="h6 fw-bold mb-3" style="color: var(--text-dark);">Filter by Focus or Duration:</h3>
         <div class="d-flex flex-wrap gap-2 nav nav-pills" id="horizontal-filters">
-            <a class="nav-link active" data-bs-toggle="pill" href="#all-practices">All Practices (8)</a>
-            <a class="nav-link" data-bs-toggle="pill" href="#relax-breath">🧘 For Relaxation</a>
-            <a class="nav-link" data-bs-toggle="pill" href="#morning-reset">☀️ Morning Rituals</a>
-            <a class="nav-link" data-bs-toggle="pill" href="#box-style">🛡️ Stress Relief</a>
-            <a class="nav-link" data-bs-toggle="pill" href="#five-minute">⏱️ 5 Minutes or Less</a>
-            <a class="nav-link" data-bs-toggle="pill" href="#four-seven-eight">✨ Deep Calm (4-7-8)</a>
-            <a class="nav-link" data-bs-toggle="pill" href="#alternate-nostril">🌀 Balance (Nadi Shodhana)</a>
-            <a class="nav-link" data-bs-toggle="pill" href="#phys-sigh">💨 Physiological Sigh</a>
-        </div>
+    <a class="nav-link filter-btn active" data-filter="all">All Practices (8)</a>
+    <a class="nav-link filter-btn" data-filter="relaxation">🧘 For Relaxation</a>
+    <a class="nav-link filter-btn" data-filter="energy">☀️ Morning Rituals</a> 
+    <a class="nav-link filter-btn" data-filter="focus">🛡️ Stress Relief</a>
+    <a class="nav-link filter-btn" data-filter="reset">⏱️ 5 Minutes or Less</a>
+    <a class="nav-link filter-btn" data-filter="sleep">✨ Deep Calm (4-7-8)</a>
+    <a class="nav-link filter-btn" data-filter="balance">🌀 Balance (Nadi Shodhana)</a>
+    <a class="nav-link filter-btn" data-filter="panic-reduction">💨 Physiological Sigh</a>
+</div>
+
     </section>
 
     <div class="row">
@@ -394,5 +395,46 @@
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 1. Get all the new filter buttons
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      
+      // 2. Get all the practice cards (the article elements)
+      const allArticles = document.querySelectorAll('.row#all-practices article');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Manage the 'active' class appearance
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+
+          const filterValue = this.getAttribute('data-filter');
+
+          allArticles.forEach(card => {
+            const cardFocus = card.getAttribute('data-focus');
+            const cardElement = card;
+
+            // Filtering Logic
+            if (filterValue === 'all') {
+              cardElement.style.display = 'block'; // Show all cards
+            } else if (cardFocus === filterValue) {
+              cardElement.style.display = 'block'; // Show matching card
+            } else {
+              cardElement.style.display = 'none'; // Hide non-matching cards
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
+</html>
+
+</body>
+
 </html>
