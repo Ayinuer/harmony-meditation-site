@@ -318,8 +318,8 @@ input[type="checkbox"]#nav-toggle-4 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* Alpha is set to 0.75 for balance between image visibility and text clarity */
-  background-color: rgba(255, 255, 255, 0.75); 
+  /* Alpha is set to 0.95 for balance between image visibility and text clarity */
+  background-color: rgba(255, 255, 255, 0.95); 
   background-blend-mode: overlay;
 }
 
@@ -329,8 +329,8 @@ input[type="checkbox"]#nav-toggle-4 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* Alpha is set to 0.75 for balance between image visibility and text clarity */
-  background-color: rgba(255, 255, 255, 0.75); 
+  /* Alpha is set to 0.95 for balance between image visibility and text clarity */
+  background-color: rgba(255, 255, 255, 0.95); 
   background-blend-mode: overlay;
 }
 
