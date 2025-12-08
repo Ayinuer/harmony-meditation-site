@@ -319,7 +319,11 @@ input[type="checkbox"]#nav-toggle-4 {
   background-position: center;
   background-attachment: fixed;
   /* Alpha is set to 0.95 for balance between image visibility and text clarity */
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.80); 
+=======
+  background-color: rgba(255, 255, 255, 0.92); 
+>>>>>>> 32d8e1613f8e33e3d3ff3c4b5b3b42820c5d2cc5
   background-blend-mode: overlay;
 }
 
@@ -330,7 +334,11 @@ input[type="checkbox"]#nav-toggle-4 {
   background-position: center;
   background-attachment: fixed;
   /* Alpha is set to 0.95 for balance between image visibility and text clarity */
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.80); 
+=======
+  background-color: rgba(255, 255, 255, 0.92); 
+>>>>>>> 32d8e1613f8e33e3d3ff3c4b5b3b42820c5d2cc5
   background-blend-mode: overlay;
 }
 
