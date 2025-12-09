@@ -314,46 +314,37 @@ input[type="checkbox"]#nav-toggle-4 {
 
 /* --- 1. Practice Page Background --- */
 .page-practice {
-  background-image: url('../assets/page_background_quote.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  /* Alpha is set to 0.95 for balance between image visibility and text clarity */
-<<<<<<< HEAD
-  background-color: rgba(255, 255, 255, 0.80); 
-=======
-  background-color: rgba(255, 255, 255, 0.92); 
->>>>>>> 32d8e1613f8e33e3d3ff3c4b5b3b42820c5d2cc5
-  background-blend-mode: overlay;
+    background-image: url('../assets/page_background_quote.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Alpha is set to 0.80 for balance between image visibility and text clarity */
+    background-color: rgba(255, 255, 255, 0.90); /* Assuming 0.80 is the desired alpha from the conflict */
+    background-blend-mode: overlay;
 }
 
-/* --- 2. About Page Background --- */
+
 .page-about {
   background-image: url('../assets/about-background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* Alpha is set to 0.95 for balance between image visibility and text clarity */
-<<<<<<< HEAD
-  background-color: rgba(255, 255, 255, 0.80); 
-=======
-  background-color: rgba(255, 255, 255, 0.92); 
->>>>>>> 32d8e1613f8e33e3d3ff3c4b5b3b42820c5d2cc5
+  /* Alpha is set to 0.80 for balance between image visibility and text clarity */
+  background-color: rgba(255, 255, 255, 0.90); 
   background-blend-mode: overlay;
 }
 
-/* --- 3. Contact Page Background --- */
-.page-contact { 
-  /* Using relative path as primary fix for path issues */
-  background-image: url('../assets/contact-background.jpg'); 
-  
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  /* Alpha is set to 0.75 for balance between image visibility and text clarity */
-  background-color: rgba(255, 255, 255, 0.80); 
-  background-blend-mode: overlay;
+.page-contact {
+/* Using relative path as primary fix for path issues */
+    background-image: url('../../assets/contact-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Alpha is set to 0.75 for balance between image visibility and text clarity */
+    background-color: rgba(255, 255, 255, 0.80);
+    background-blend-mode: overlay;
 }
+
 
 /* --- 4. Home Page (Solid Color) --- */
 .page-home {
