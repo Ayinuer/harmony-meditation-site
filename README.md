@@ -1,6 +1,8 @@
 # 🧘 Harmony — A Responsive Guide to Mental Well-being & Breathing
 
+
 Click **[here to explore the live website](https://ayinuer.github.io/harmony-meditation-site/harmony-meditation-site/index.html)**.
+
 
 **Project Description:**  
 Harmony is a responsive, soothing website designed to offer short, accessible breathing practices that help users anchor calm and reduce daily stress. It follows a mobile-first philosophy, offering a clean, elegant interface with strong UX and modern design principles.

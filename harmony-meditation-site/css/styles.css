@@ -336,12 +336,12 @@ input[type="checkbox"]#nav-toggle-4 {
 
 .page-contact {
 /* Using relative path as primary fix for path issues */
-    background-image: url('../../assets/contact-background.jpg');
+    background-image: url('../assets/contact-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     /* Alpha is set to 0.75 for balance between image visibility and text clarity */
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.85);
     background-blend-mode: overlay;
 }
 
