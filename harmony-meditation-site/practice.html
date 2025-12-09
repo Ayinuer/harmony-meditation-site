@@ -49,6 +49,7 @@
     <a class="nav-link filter-btn" data-filter="energy">☀️ Morning Rituals</a> 
     <a class="nav-link filter-btn" data-filter="focus">🛡️ Stress Relief</a>
     <a class="nav-link filter-btn" data-filter="reset">⏱️ 5 Minutes or Less</a>
+    <a class="nav-link filter-btn" data-filter="motivation">🚀 Daily Motivation</a>
     <a class="nav-link filter-btn" data-filter="sleep">✨ Deep Calm (4-7-8)</a>
     <a class="nav-link filter-btn" data-filter="balance">🌀 Balance (Nadi Shodhana)</a>
     <a class="nav-link filter-btn" data-filter="panic-reduction">💨 Physiological Sigh</a>
@@ -117,13 +118,26 @@
                                 <img src="assets/practice-scene-calm.jpg" alt="A serene landscape symbolizing quick calm." class="img-fluid">
                             </div>
 
-                            <ul class="small mt-3" style="color: var(--text-secondary);">
-                                <li>Inhale gently for 4–5 seconds through the nose.</li>
-                                <li>Exhale for 5–6 seconds through the mouth, like fogging a mirror.</li>
-                                <li>Repeat for the full five minutes, letting each breath become smoother and softer.</li>
-                                <li>As you breathe, mentally repeat: “I am here. I am safe. I am calm.”</li>
-                            </ul>
-                        </div>
+                            <div class="accordion accordion-flush mt-3" id="accordionFiveMin">
+  <div class="accordion-item">
+    <h3 class="accordion-header">
+      <button class="accordion-button collapsed small fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveMin" aria-expanded="false" aria-controls="collapseFiveMin">
+        View Step-by-Step Instructions
+      </button>
+    </h3>
+    <div id="collapseFiveMin" class="accordion-collapse collapse" data-bs-parent="#accordionFiveMin">
+      <div class="accordion-body p-2">
+        <ul class="small" style="color: var(--text-secondary);">
+            <li>Inhale gently for 4–5 seconds through the nose.</li>
+            <li>Exhale for 5–6 seconds through the mouth, like fogging a mirror.</li>
+            <li>Repeat for the full five minutes, letting each breath become smoother and softer.</li>
+            <li>As you breathe, mentally repeat: “I am here. I am safe. I am calm.”</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
                     </section>
                 </article>
 
@@ -395,7 +409,7 @@
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
