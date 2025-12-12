@@ -4,20 +4,24 @@
 Click **[here to explore the live website](https://ayinuer.github.io/harmony-meditation-site/harmony-meditation-site/index.html)**.
 
 
-**Project Description:**  
-Harmony is a responsive, soothing website designed to offer short, accessible breathing practices that help users anchor calm and reduce daily stress. It follows a mobile-first philosophy, offering a clean, elegant interface with strong UX and modern design principles.
+**Project Description:** Harmony is a responsive, soothing website designed to offer short, accessible breathing practices that help users anchor calm and reduce daily stress. It follows a mobile-first philosophy, offering a clean, elegant interface with strong UX and modern design principles.
 
 ---
 
 ## 📋 Table of Contents
 
 * [**🎯 Project Goals & Vision**](#-project-goals--vision)
-* [**🖼️ Visual Showcase & Technical Implementation**](#%EF%B8%8F-visual-showcase--technical-implementation)
+* [**🖼️ Visual & Technical Showcase**](#%EF%B8%8F-visual--technical-showcase)
+    * [0. Site Quality & Validation (Screenshots)](#0-site-quality--validation-screenshots)
     * [1. Responsive Adaptability](#1-responsive-adaptability)
-    * [2. Key Feature: Practice Filtering](#2-key-feature-practice-filtering)
+    * [2. Full Site View](#2-full-site-view)
+    * [3. Key Feature: Practice Filtering](#3-key-feature-practice-filtering)
 * [**💻 Tech Stack & Design System**](#-tech-stack--design-system)
+    * [W3C Validation Status](#w3c-validation-status)
+    * [Color Palette (CSS Variables)](#color-palette-css-variables)
+* [**📱 Responsive Design and UX Details**](#-responsive-design-and-ux-details)
 * [**✅ User Stories & Features**](#-user-stories--features)
-* [**🛠️ Setup & Local Run**](#%EF%B8%8F-setup--local-run)
+* [**🛠️ Setup & Local Run**](#-setup--local-run)
 * [**🐛 Known Issues & Future Plans**](#-known-issues--future-plans)
 
 ---
@@ -32,9 +36,19 @@ Harmony is a responsive, soothing website designed to offer short, accessible br
 
 ---
 
-## 🖼️ Visual Showcase & Technical Implementation
+## 🖼️ Visual & Technical Showcase
 
 This section details the critical design and development work behind the site's most impactful visuals.
+
+### 0. Site Quality & Validation (Screenshots)
+
+These images serve as quick visual evidence of the project's technical quality and adherence to web standards.
+
+#### 🛡️ W3C HTML Validation Result
+Screenshot confirming that the main HTML code has successfully passed validation against **World Wide Web Consortium (W3C)** standards. This signifies a commitment to **cross-browser consistency**, **best coding practices**, and a strong foundation for **accessibility**.
+![Screenshot of the W3C Validator showing the Harmony index.html page is valid.](harmony-meditation-site/assets/w3c-html-validation.png)
+
+---
 
 ### 1. Responsive Adaptability
 
@@ -47,10 +61,63 @@ This visual demonstrates the structural integrity of the site across three major
 * **Bootstrap Grid System:** **Bootstrap 5.3.3** was implemented for its robust, consistent grid, ensuring elements like the navigation and footer maintain alignment regardless of screen size.
 * **Custom Navigation:** The mobile hamburger menu was engineered using a lightweight **pure-CSS checkbox toggle method**, avoiding JavaScript dependencies for faster, more reliable performance.
 
-### 2. Key Feature: Practice Filtering
+---
+
+### 2. Full Site View (Four Main Pages)
+
+This series of full-page screenshots provides a complete visual overview of the user interface, demonstrating the consistent design and structure across the primary pages.
+
+
+#### Home Page (`index.html`)
+Showcases the hero section, main mission statement, and key Call-to-Action (CTA) elements.
+Full screenshot of the Harmony website Home Page.
+
+
+![alt text](harmony-meditation-site/assets/home.page.view1.png)
+
+
+![alt text](harmony-meditation-site/assets/home.page.view2.png)
+
+
+
+
+#### Practice Page (`practice.html`)
+Displays the library of breathwork practices, showing the use of filter pills and the card layout for content organization.
+Full screenshot of the Harmony website Practice Page.
+
+
+![alt text](harmony-meditation-site/assets/practice.page.view1.png)
+
+
+![alt text](harmony-meditation-site/assets/practice.page.view2.png)
+
+
+
+
+#### About Page (`about.html`)
+Illustrates the project's purpose and creator information, focusing on typography and content hierarchy.
+
+
+![Full screenshot of the Harmony website About Page.](harmony-meditation-site/assets/about.page.view.png)
+
+
+
+
+#### Contact Page (`contact.html`)
+Highlights the responsive form design and input validation elements using Bootstrap utilities.
+
+
+![Full screenshot of the Harmony website Contact Page.](harmony-meditation-site/assets/contact.page.view.png)
+
+---
+
+### 3. Key Feature: Practice Filtering
 
 A screenshot showing the 'Practice' page, highlighting the filter controls and interactive practice cards.
-![alt text](harmony-meditation-site/assets/practice-page-mockUp.png)
+
+![alt text](harmony-meditation-site/assets/practice.page3.png)
+
+
 
 **Implementation Details:**
 * **Interactive Filtering:** Practices are categorized using filter pills (e.g., "Calm," "Energy"). This functionality utilizes pure CSS and attribute selectors (or lightweight JavaScript if used) to control the visibility of cards, offering a smooth, instant filtering experience.
@@ -74,7 +141,13 @@ The project's primary stylesheet has been verified to adhere to web standards.
 [![Valid CSS!](https://jigsaw.w3.org/css-validator/images/vcss)](https://jigsaw.w3.org/css-validator/validator?uri=https://ayinuer.github.io/harmony-meditation-site/harmony-meditation-site/css/styles.css&profile=css3&usermedium=all)
 
 
+
 ### Color Palette (CSS Variables)
+
+A visual guide to the colors used across the Harmony website:
+
+
+![alt text](harmony-meditation-site/assets/colorpalette.jpg)
 
 | Variable Name | Color Value | Usage |
 |---------------|-------------|--------|
