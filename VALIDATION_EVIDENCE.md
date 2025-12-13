@@ -66,52 +66,6 @@ Validator: W3C Validator (Direct Input)
 ---
 
 ## 3. Lighthouse Performance Testing
-
-All four pages of the FreshCharge+ website were tested using Google Lighthouse in Chrome DevTools on both Desktop and Mobile views.
-
-Across all tests:
-* Accessibility, Best Practices and SEO stayed consistently high (mostly **90+**).
-* Desktop performance scores were between **95–99**.
-* Mobile performance scores were slightly lower (due to large hero imagery) but remained in the **70–90** range.
-
-The screenshots below show the final Lighthouse reports for each page and device.
-
-### Home – Desktop Lighthouse
-
-Key scores (Desktop):
-* Performance: **95**
-* Accessibility: **93**
-* Best Practices: **100**
-* SEO: **91**
-
-
-
-### Home – Mobile Lighthouse
-
-Key scores (Mobile):
-* Performance: **91**
-* Accessibility: **93**
-* Best Practices: **100**
-* SEO: **91**
-
-
-
-### Flavours – Desktop Lighthouse
-
-Key scores (Desktop):
-* Performance: **95**
-* Accessibility: **94**
-* Best Practices: **100**
-* SEO: **91**
-
-
-
-### Flavours – Mobile Lighthouse
-
-Key scores (Mobile):
-* Performance: **74**
-* Accessibility: **94**
-* Best Practices: **96**
-* SEO: **91**
+Screenshot
 
 
