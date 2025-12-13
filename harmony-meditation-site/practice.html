@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Harmony — Practice</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -17,8 +17,8 @@
   <header class="site-header">
     <div class="container d-flex align-items-center justify-content-between">
       <a class="brand" href="index.html">Harmony</a>
-      <input id="nav-toggle-2" type="checkbox" />
-      <label for="nav-toggle-2" class="nav-toggle-label" aria-hidden="true">
+      <input id="nav-toggle-2" type="checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle-2" class="nav-toggle-label">
         <span></span><span></span><span></span>
       </label>
       <nav class="site-nav">
@@ -44,24 +44,22 @@
     <section class="mb-5 p-3 rounded" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.05);">
         <h3 class="h6 fw-bold mb-3" style="color: var(--text-dark);">Filter by Focus or Duration:</h3>
         <div class="d-flex flex-wrap gap-2 nav nav-pills" id="horizontal-filters">
-    <a class="nav-link filter-btn active" data-filter="all">All Practices (8)</a>
-    <a class="nav-link filter-btn" data-filter="relaxation">🧘 For Relaxation</a>
-    <a class="nav-link filter-btn" data-filter="energy">☀️ Morning Rituals</a> 
-    <a class="nav-link filter-btn" data-filter="focus">🛡️ Stress Relief</a>
-    <a class="nav-link filter-btn" data-filter="reset">⏱️ 5 Minutes or Less</a>
-    <a class="nav-link filter-btn" data-filter="motivation">🚀 Daily Motivation</a>
-    <a class="nav-link filter-btn" data-filter="sleep">✨ Deep Calm (4-7-8)</a>
-    <a class="nav-link filter-btn" data-filter="balance">🌀 Balance (Nadi Shodhana)</a>
-    <a class="nav-link filter-btn" data-filter="panic-reduction">💨 Physiological Sigh</a>
-</div>
-
+            <a class="nav-link filter-btn active" data-filter="all">All Practices (8)</a>
+            <a class="nav-link filter-btn" data-filter="relaxation">🧘 For Relaxation</a>
+            <a class="nav-link filter-btn" data-filter="energy">☀️ Morning Rituals</a> 
+            <a class="nav-link filter-btn" data-filter="focus">🛡️ Stress Relief</a>
+            <a class="nav-link filter-btn" data-filter="reset">⏱️ 5 Minutes or Less</a>
+            <a class="nav-link filter-btn" data-filter="motivation">🚀 Daily Motivation</a>
+            <a class="nav-link filter-btn" data-filter="sleep">✨ Deep Calm (4-7-8)</a>
+            <a class="nav-link filter-btn" data-filter="balance">🌀 Balance (Nadi Shodhana)</a>
+            <a class="nav-link filter-btn" data-filter="panic-reduction">💨 Physiological Sigh</a>
+        </div>
     </section>
 
     <div class="row">
-        <div class="col-12"></div>
+        <div class="col-12">
             <div class="row g-4" id="all-practices"> 
                 
-                <!-- Relax Breath -->
                 <article class="col-lg-6 col-md-12" id="relax-breath" data-duration="5-10" data-difficulty="medium" data-focus="relaxation">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -103,7 +101,6 @@
                     </section>
                 </article>
 
-                <!-- Five Minute Calm -->
                 <article class="col-lg-6 col-md-12" id="five-minute" data-duration="5" data-difficulty="easy" data-focus="reset">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -119,29 +116,28 @@
                             </div>
 
                             <div class="accordion accordion-flush mt-3" id="accordionFiveMin">
-  <div class="accordion-item">
-    <h3 class="accordion-header">
-      <button class="accordion-button collapsed small fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveMin" aria-expanded="false" aria-controls="collapseFiveMin">
-        View Step-by-Step Instructions
-      </button>
-    </h3>
-    <div id="collapseFiveMin" class="accordion-collapse collapse" data-bs-parent="#accordionFiveMin">
-      <div class="accordion-body p-2">
-        <ul class="small" style="color: var(--text-secondary);">
-            <li>Inhale gently for 4–5 seconds through the nose.</li>
-            <li>Exhale for 5–6 seconds through the mouth, like fogging a mirror.</li>
-            <li>Repeat for the full five minutes, letting each breath become smoother and softer.</li>
-            <li>As you breathe, mentally repeat: “I am here. I am safe. I am calm.”</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
+                              <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed small fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveMin" aria-expanded="false" aria-controls="collapseFiveMin">
+                                    View Step-by-Step Instructions
+                                  </button>
+                                </h3>
+                                <div id="collapseFiveMin" class="accordion-collapse collapse" data-bs-parent="#accordionFiveMin">
+                                  <div class="accordion-body p-2">
+                                    <ul class="small" style="color: var(--text-secondary);">
+                                        <li>Inhale gently for 4–5 seconds through the nose.</li>
+                                        <li>Exhale for 5–6 seconds through the mouth, like fogging a mirror.</li>
+                                        <li>Repeat for the full five minutes, letting each breath become smoother and softer.</li>
+                                        <li>As you breathe, mentally repeat: “I am here. I am safe. I am calm.”</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </section>
                 </article>
 
-                <!-- Morning Reset -->
                 <article class="col-lg-6 col-md-12" id="morning-reset" data-duration="3-breaths" data-difficulty="easy" data-focus="energy">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -184,7 +180,6 @@
                     </section>
                 </article>
 
-                <!-- Box Breathing -->
                 <article class="col-lg-6 col-md-12" id="box-style" data-duration="1-5" data-difficulty="medium" data-focus="focus">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -209,7 +204,6 @@
                     </section>
                 </article>
 
-                <!-- Daily Motivation -->
                 <article class="col-lg-6 col-md-12" data-duration="1" data-difficulty="easy" data-focus="motivation">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -233,7 +227,6 @@
                     </section>
                 </article>
 
-                <!-- 4-7-8 Breath -->
                 <article class="col-lg-6 col-md-12" id="four-seven-eight" data-duration="4-7-8" data-difficulty="easy" data-focus="sleep">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -262,7 +255,6 @@
                     </section>
                 </article>
 
-                <!-- Alternate Nostril (Nadi Shodhana) -->
                 <article class="col-lg-6 col-md-12" id="alternate-nostril" data-duration="5-10" data-difficulty="medium" data-focus="balance">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -292,7 +284,6 @@
                     </section>
                 </article>
 
-                <!-- Physiological Sigh -->
                 <article class="col-lg-6 col-md-12" id="phys-sigh" data-duration="0.5-2" data-difficulty="easy" data-focus="panic-reduction">
                     <section class="card practice-card h-100 shadow">
                         <div class="card-body">
@@ -322,9 +313,7 @@
                 </article>
                 
             </div> 
-
-            <!-- Mindfulness Tips & Self-Healing -->
-            <section class="mt-5 pt-4">
+        </div> </div> <section class="mt-5 pt-4"> 
               <h3 class="display-6 mb-3" style="color: var(--text-dark);">Mindfulness Tips & Self-Healing</h3>
               
               <p class="fs-5" style="color: var(--text-secondary);">
@@ -332,7 +321,7 @@
                 Below are advanced tips you can practice alongside the breathing techniques above — perfect for course material,
                 guided animations, or journaling prompts.
               </p>
-
+            
               <div class="row g-4 mt-3">
                 <div class="col-md-6">
                   <div class="card h-100" style="background-color: var(--card-bg); border: 1px solid rgba(0,0,0,0.04);">
@@ -386,8 +375,8 @@
                 <p class="mb-1"><strong>Self-Healing Reminder:</strong> breathwork supports but does not replace medical treatment. For persistent anxiety, sleep issues, or health concerns, consult a healthcare provider or mental health professional.</p>
               </div>
             </section>
+            
 
-            <!-- Important Notes Section -->
             <section class="mt-5 pt-4">
               <h3 class="display-6 mb-3" style="color: var(--text-dark);">Important Notes</h3>
               <p class="fs-5" style="color: var(--text-secondary);">
@@ -398,8 +387,8 @@
               </p>
             </section>
 
-        </div>
-    </div>
+          
+    
   </main>
 
   <footer class="site-footer py-4">
@@ -447,8 +436,4 @@
     });
   </script>
 </body>
-</html>
-
-</body>
-
 </html>

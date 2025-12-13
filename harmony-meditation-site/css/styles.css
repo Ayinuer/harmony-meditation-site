@@ -2,8 +2,6 @@
 /* 1. Base / Variables / Typography */
 /* ==================================== */
 :root
-
-
 {
   /* UPDATED COLOR PALETTE for a sophisticated, calmer look */
   --soft-bg: #e9f5f2;     /* Very Light Mint/Teal Background */
@@ -165,7 +163,7 @@ input[type="checkbox"]#nav-toggle-4 {
 .hero .btn-outline-light:focus { 
   color: var(--primary);
   background-color: var(--card-bg);
-  border-color: var(--card-bg);
+  /* Removed redundant border-color: var(--card-bg); */
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); 
 }
 
@@ -371,7 +369,7 @@ input[type="checkbox"]#nav-toggle-4 {
 .btn-primary {
     color: var(--card-bg); 
     background-color: var(--primary);
-    border-color: var(--primary);
+    /* Removed redundant border-color: var(--primary); */
     
     transform: translateY(0);
     box-shadow: 0 4px 8px rgba(76, 168, 154, 0.3); 
@@ -381,7 +379,7 @@ input[type="checkbox"]#nav-toggle-4 {
 .btn-primary:focus {
     color: var(--card-bg); 
     background-color: var(--primary);
-    border-color: var(--primary);
+    /* Removed redundant border-color: var(--primary); */
     transform: translateY(-2px); /* Lift effect on hover */
     box-shadow: 0 6px 12px rgba(76, 168, 154, 0.4); 
 }
@@ -397,7 +395,7 @@ input[type="checkbox"]#nav-toggle-4 {
 .btn-outline-primary:focus {
     color: var(--card-bg); 
     background-color: var(--primary);
-    border-color: var(--primary);
+    /* Removed redundant border-color: var(--primary); */
     box-shadow: 0 0 0 0.25rem rgba(76, 168, 154, 0.4); 
 }
 
@@ -412,7 +410,7 @@ input[type="checkbox"]#nav-toggle-4 {
 .btn-outline-secondary.btn-lg:focus {
     color: var(--card-bg) !important; 
     background-color: var(--muted) !important;
-    border-color: var(--muted) !important;
+    /* Removed redundant border-color: var(--muted) !important; */
     box-shadow: 0 0 0 0.25rem rgba(96, 125, 139, 0.4); 
 }
 
@@ -445,4 +443,3 @@ input[type="checkbox"]#nav-toggle-4 {
 #affirmations .blockquote-footer {
     color: var(--text-dark) !important; 
 }
-

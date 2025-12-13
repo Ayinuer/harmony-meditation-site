@@ -1,5 +1,9 @@
 # 🧘 Harmony — A Responsive Guide to Mental Well-being & Breathing
 
+[![W3C HTML Status](https://img.shields.io/badge/HTML-Valid-brightgreen.svg)](./VALIDATION_EVIDENCE.md) 
+[![W3C CSS Status](https://img.shields.io/badge/CSS-Valid-brightgreen.svg)](./VALIDATION_EVIDENCE.md)
+[![License](https://img.shields.io/badge/License-%C2%A9%202025-blue.svg)](https://ayinuer.github.io/harmony-meditation-site/harmony-meditation-site/index.html) 
+[![Version Control](https://img.shields.io/badge/Version-Git%20Controlled-E94E31.svg)](https://github.com/Ayinuer/harmony-meditation-site)
 
 Click **[here to explore the live website](https://ayinuer.github.io/harmony-meditation-site/harmony-meditation-site/index.html)**.
 
@@ -23,6 +27,7 @@ Click **[here to explore the live website](https://ayinuer.github.io/harmony-med
 * [**✅ User Stories & Features**](#-user-stories--features)
 * [**🛠️ Setup & Local Run**](#-setup--local-run)
 * [**🐛 Known Issues & Future Plans**](#-known-issues--future-plans)
+* [**🚀 Deployment, Quality & Credits (LO3 & LO4)**](#-deployment-quality--credits-lo3--lo4)
 
 ---
 
@@ -215,4 +220,28 @@ To clone and run the project locally, execute the following commands in your ter
 * Develop user account functionality to allow saving and tracking favorite practices.
 
 ---
-**Creator:** Ayinuer Aihaiti | **License:** © 2025 Harmony — Mental Well-being & Breathing Guide
+
+## 🚀 Deployment, Quality & Credits (LO3 & LO4)
+
+### 1. Project Quality and Validation Evidence (LO2 Proof)
+
+All core testing evidence is compiled in a separate document:
+
+* **View Full Validation Proof:** **[Click here to view all W3C HTML/CSS and Lighthouse performance test screenshots.](./VALIDATION_EVIDENCE.md)**
+    
+    * **Lighthouse Performance:** A separate screenshot of the Lighthouse report (Performance, Accessibility, Best Practices, SEO) has been completed and reviewed.
+
+### 2. Deployment and Maintainability (LO3 Proof)
+
+The project was managed using Git for version control and deployed to GitHub Pages.
+
+* **Deployment Status:** The final version deployed to GitHub Pages matches the development version exactly.
+* **Code Cleanliness:** All commented-out code was removed before deployment, and clean, commented code remains.
+* **Functional Integrity:** All internal links and interactive elements function correctly.
+
+### 3. Attribution and Licensing (LO4 Documentation)
+
+* **Creator:** Ayinuer Aihaiti
+* **Proper Attribution:** All external code and assets are used with appropriate attribution and/or license.
+* **🤖 Declaration of use of AI:** I utilized **[Specific AI Tool Name, e.g., Gemini, ChatGPT]** for the purpose of [e.g., generating boilerplate text, code explanation, or debugging assistance].
+* **License:** © 2025 Harmony — Mental Well-being & Breathing Guide
