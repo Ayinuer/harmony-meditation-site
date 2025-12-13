@@ -16,7 +16,6 @@ Click **[here to explore the live website](https://ayinuer.github.io/harmony-med
 
 * [**🎯 Project Goals & Vision**](#-project-goals--vision)
 * [**🖼️ Visual & Technical Showcase**](#%EF%B8%8F-visual--technical-showcase)
-    * [0. Site Quality & Validation (Screenshots)](#0-site-quality--validation-screenshots)
     * [1. Responsive Adaptability](#1-responsive-adaptability)
     * [2. Full Site View](#2-full-site-view)
     * [3. Key Feature: Practice Filtering](#3-key-feature-practice-filtering)
