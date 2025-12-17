@@ -131,7 +131,7 @@ input[type="checkbox"]#nav-toggle-4 {
 /* HERO SECTION (index.html) */
 .hero{
   min-height:56vh;
-  background-image: linear-gradient(180deg, rgba(76, 168, 154, 0.4), rgba(46, 95, 99, 0.6)), url('../assets/hero.jpg');
+  background-image: linear-gradient(180deg, rgba(76, 168, 154, 0.4), rgba(46, 95, 99, 0.6)), url(../assets/hero.webp);
   background-size:cover;
   background-position:center;
   display:flex;
@@ -309,10 +309,10 @@ input[type="checkbox"]#nav-toggle-4 {
 /* ==================================== */
 /* 5. Page Specific Overrides & Backgrounds */
 /* ==================================== */
-
+ 
 /* --- 1. Practice Page Background --- */
 .page-practice {
-    background-image: url('../assets/page_background_quote.jpg');
+    background-image: url('../assets/page_background_quote-2.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -323,7 +323,7 @@ input[type="checkbox"]#nav-toggle-4 {
 
 
 .page-about {
-  background-image: url('../assets/about-background.jpg');
+  background-image: url('../assets/about-background.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -334,7 +334,7 @@ input[type="checkbox"]#nav-toggle-4 {
 
 .page-contact {
 /* Using relative path as primary fix for path issues */
-    background-image: url('../assets/contact-background.jpg');
+    background-image: url('../assets/contact-background.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -417,7 +417,7 @@ input[type="checkbox"]#nav-toggle-4 {
 
 /* --- #affirmations: Understanding Your Breath Section Styles --- */
 #affirmations {
-    background-image: url('../assets/harmony-section-bg.jpg'); 
+    background-image: url(../assets/harmony-section-bg.webp);
     
     background-size: cover; 
     background-position: center center; 
